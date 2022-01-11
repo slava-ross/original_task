@@ -1,0 +1,157 @@
+body,
+html {
+    padding: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: linear-gradient(150deg, rgba(245, 245, 245, 0) 5%, #282828 100%) no-repeat;
+    background-attachment: fixed;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+h1,h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: large;
+    font-weight: bold;
+}
+h2 {
+    font-size: medium;
+    font-weight: bold;
+}
+
+#book-searching-result {
+    display: none;
+}
+
+.navbar-brand {
+    padding: 5px;
+    color: #000 !important;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    border-radius: 5px;
+    line-height: 35px;
+}
+
+.message {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+.error {
+    color: red;
+}
+.form-group {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.form-group label, .form-group-header {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+input:invalid, textarea:invalid {
+    border-color: red;
+}
+input:valid, textarea:valid {
+    border-color: green;
+}
+svg {
+    height: 0;
+    width: 0;
+}
+
+/* Прелоадер */
+
+#loader {
+    display: none;
+}
+.overlay-loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1060;
+}
+.overlay-loader .loader-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(44, 71, 98, 0.8);
+}
+.overlay-loader .loader-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -48px 0 0 -48px;
+    font-size: 96px;
+    color: #FFF;
+}
+.overlay-loader .loader-icon.spinning-cog {
+    -webkit-animation: spinning-cog 1.3s infinite ease;
+    -moz-animation: spinning-cog 1.3s infinite ease;
+    -ms-animation: spinning-cog 1.3s infinite ease;
+    -o-animation: spinning-cog 1.3s infinite ease;
+    animation: spinning-cog 1.3s infinite ease;
+}
+@-webkit-keyframes spinning-cog {
+    0% { -webkit-transform: rotate(0deg) }
+    20% { -webkit-transform: rotate(-45deg) }
+    100% { -webkit-transform: rotate(360deg) }
+}
+@-moz-keyframes spinning-cog {
+    0% { -moz-transform: rotate(0deg) }
+    20% { -moz-transform: rotate(-45deg) }
+    100% { -moz-transform: rotate(360deg) }
+}
+@-o-keyframes spinning-cog {
+    0% { -o-transform: rotate(0deg) }
+    20% { -o-transform: rotate(-45deg) }
+    100% { -o-transform: rotate(360deg) }
+}
+@keyframes spinning-cog {
+    0% { transform: rotate(0deg) }
+    20% { transform: rotate(-45deg) }
+    100% { transform: rotate(360deg) }
+}
+@-webkit-keyframes shrinking-cog {
+    0% { -webkit-transform: scale(1) }
+    20% { -webkit-transform: scale(1.2) }
+    100% { -webkit-transform: scale(0) }
+}
+@-moz-keyframes shrinking-cog {
+    0% { -moz-transform: scale(1) }
+    20% { -moz-transform: scale(1.2) }
+    100% { -moz-transform: scale(0) }
+}
+@-o-keyframes shrinking-cog {
+    0% { -o-transform: scale(1) }
+    20% { -o-transform: scale(1.2) }
+    100% { -o-transform: scale(0) }
+}
+@keyframes shrinking-cog {
+    0% { transform: scale(1) }
+    20% { transform: scale(1.2) }
+    100% { transform: scale(0) }
+}
+.overlay-loader .loader-icon.shrinking-cog {
+    -webkit-animation: shrinking-cog .3s 1 ease forwards;
+    -moz-animation: shrinking-cog .3s 1 ease forwards;
+    -ms-animation: shrinking-cog .3s 1 ease forwards;
+    -o-animation: shrinking-cog .3s 1 ease forwards;
+    animation: shrinking-cog .3s 1 ease forwards;
+}
